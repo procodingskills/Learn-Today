@@ -1,0 +1,4 @@
+<aura:component >
+    <aura:attribute name="txt" type="String"/>
+    OUTPUT POC3 : {!v.txt}
+</aura:component>

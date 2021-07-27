@@ -1,0 +1,5 @@
+<aura:component >
+    <aura:attribute name="inputValue" type="String"/>
+    <c:POC2 random="{!v.inputValue}"/>
+    <c:POC3 txt="{!v.inputValue}"/>
+</aura:component>

@@ -1,0 +1,21 @@
+<!--
+  @description       : 
+  @author            : admin@lakshmideepak.com
+  @group             : 
+  @last modified on  : 07-12-2021
+  @last modified by  : admin@lakshmideepak.com
+  Modifications Log 
+  Ver   Date         Author                    Modification
+  1.0   07-12-2021   admin@lakshmideepak.com   Initial Version
+-->
+<aura:component implements="flexipage:availableForAllPageTypes" controller="HeaderCMP">
+    <aura:attribute name="contacts" type="List"/>
+    <aura:handler event="c:AccountContactEvt" action="{!c.getContacts}"/>
+<!-- Handle the application event -->
+    <aura:iteration items="{!v.contacts}" var="con">
+        <div class="slds-card" style="text-align: center;">
+            First Name : {!con.FirstName} <br/>
+            Last Name  : {!con.LastName}
+        </div>
+    </aura:iteration>
+</aura:component>

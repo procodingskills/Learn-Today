@@ -1,0 +1,4 @@
+<aura:component >
+    <aura:attribute name="random" type="String"/>
+    <lightning:input type="text" label="POC2" value="{!v.random}"/>
+</aura:component>

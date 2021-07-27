@@ -1,0 +1,12 @@
+<aura:component >
+    <aura:registerEvent name="appEvt" type="c:appEvent"/>
+    <aura:registerEvent name="cevent" type="c:comEvent"/>
+    <center>
+        <lightning:button label="fire APP Event" onclick="{!c.fireEvent}"/>
+        <lightning:button label="fire COM Event" onclick="{!c.fireEventCom}"/>
+        <br/> <br/>
+        <!-- add dynamically to event handler -->
+        <lightning:button label="Add APP Event Handler" onclick="{!c.addEventHandler}"/>
+        <lightning:button label="Add COM Event Handler" onclick="{!c.addEventHandlerC}"/>
+    </center>
+</aura:component>

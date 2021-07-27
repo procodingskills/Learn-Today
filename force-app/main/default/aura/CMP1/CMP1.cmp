@@ -1,0 +1,7 @@
+<aura:component >
+    <aura:attribute name="firstName" type="String" default="" description="This firstName will store the Persons Name"/>
+    <aura:attribute name="lastName" type="String" default=""/>
+	<h1>I am from CMP1</h1>
+    <lightning:input label="First Name" value="{!v.firstName}"/>
+    <lightning:input label="Last Name" value="{!v.lastName}"/>
+</aura:component>

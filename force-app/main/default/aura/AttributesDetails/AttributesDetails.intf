@@ -1,0 +1,5 @@
+<aura:interface description="Interface template">
+  <aura:attribute name="firstName" type="String" default="asdasda" description="An User FirstName"/>
+  <aura:attribute name="lastName" type="String" default="" description="An User FirstName"/>
+  <aura:attribute name="objectDetail" type="list" default="" />
+</aura:interface>
