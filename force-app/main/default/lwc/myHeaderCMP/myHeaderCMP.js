@@ -15,4 +15,9 @@ export default class MyHeaderCMP extends LightningElement {
     sampleMethod(event){
 
     }
+    handleNameChange(event){
+      let changed = event.target.value;
+      let inputValue = this.template.querySelector("lightning-input[data-my-id=myinput]").value;
+      this.username = inputValue;
+    }
 }

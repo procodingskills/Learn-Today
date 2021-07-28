@@ -1,5 +1,7 @@
 <template>
     <div class="slds-card">
             THIS IS MY FIRST LWC CLASS for US : {username}
+            <lightning-input value={username} label="User Name" onchange={handleNameChange} data-my-id="myinput">
+            </lightning-input>
     </div>
 </template>
