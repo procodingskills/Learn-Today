@@ -1,0 +1,13 @@
+<template>
+        <lightning-card  title="Apex Example">
+            <lightning-button label="Call Server" onclick={handleUser} slot="actions"></lightning-button>
+            <p class="slds-p-horizontal_small">Output from Server Action 
+                <br/>
+                1. As a Property : {wirePropertyVariable.data}<br/>
+                2. As a Function : {wireFunctionData}<br/>
+                3. Imperative calling : {userData}
+            </p>
+            <p slot="footer">There are 3 ways to call your Apex Method
+                <br/> 1. As A property , <br/> 2) As a Function ,<br/> 3) Imperatively</p>
+        </lightning-card>
+</template>
