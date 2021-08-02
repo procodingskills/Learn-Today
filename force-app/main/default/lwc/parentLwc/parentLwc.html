@@ -1,0 +1,12 @@
+<template>
+    <lightning-card  title="Parent to Child Example">
+        <lightning-button label="Call Child Method" slot="actions" onclick={callChildMethod}></lightning-button>
+        <p class="slds-p-horizontal_small">
+            <lightning-input type="text" placeholder="Type Here" data-my-id="inputType" 
+            value="" onchange={messageUpdated}>
+            </lightning-input>
+            <c-child-lwc data-my-id="childlwc" message-child="ParentToChild Example"></c-child-lwc>
+        </p>
+        <p slot="footer">Using @api can be exposed your properties and methods outside of the LWC</p>
+    </lightning-card>
+</template>
