@@ -5,6 +5,9 @@
             <lightning-input type="text" placeholder="Type Here" data-my-id="inputType" 
             value="" onchange={messageUpdated}>
             </lightning-input>
+             <!-- To handle the dispatch event , You should keep your event as 
+               on + eventname ==> oneventname 
+            -->
             <c-child-lwc data-my-id="childlwc" 
                 message-child="ParentToChild Example" 
                 oncustomeventexample={customeventexampleHandler}></c-child-lwc>
